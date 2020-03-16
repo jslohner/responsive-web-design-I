@@ -365,7 +365,8 @@ footer {
 		padding-bottom: 20%;
 	}
 	header {
-		height: 65vh;
+		height: 100%;
+		padding: 10% 0%;
 	}
 	header .title-picture {
 		display: none;
@@ -378,7 +379,30 @@ footer {
 		width: 100%;
 	}
 	.content {
-		padding: 4% 4% 4% 1%;
+		padding: 4% 4% 4% 2%;
+	}
+	.contact-section {
+		justify-content: flex-start;
+		width: 100%;
+		padding: 3% 2%;
+	}
+	#contact {
+		justify-content: flex-start;
+		font-size: 90%;
+		width: 100%;
+		margin-bottom: 2%;
+	}
+	.contact-section address {
+		align-items: flex-start;
+		font-size: 90%;
+		width: 100%;
+		line-height: 1;
+	}
+	.contact-section address p {
+		padding-bottom: 1%;
+	}
+	footer {
+		font-size: 90%;
 	}
 }
 
