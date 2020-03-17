@@ -19,7 +19,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	/* border: 1px solid grey; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -113,7 +112,7 @@ header div {
 }
 
 header .title-container {
-	flex-flow: row wrap;
+	flex-flow: column nowrap;
 	align-items: center;
 	text-align: center;
 }
@@ -127,7 +126,7 @@ header .title-container .title-button {
 	border: 1px solid black;
 	align-items: center;
 	justify-content: center;
-	width: 35%;
+	width: 180px;
 	height: 4vh;
 	/* font-size: 120%; */
 }
@@ -383,19 +382,18 @@ footer {
 	}
 	.contact-section {
 		justify-content: flex-start;
-		width: 100%;
 		padding: 3% 2%;
 	}
 	#contact {
 		justify-content: flex-start;
 		font-size: 90%;
-		width: 100%;
+		/* width: 100%; */
 		margin-bottom: 2%;
 	}
 	.contact-section address {
 		align-items: flex-start;
 		font-size: 90%;
-		width: 100%;
+		/* width: 100%; */
 		line-height: 1;
 	}
 	.contact-section address p {
@@ -429,5 +427,35 @@ footer {
 	}
 	nav .links #services-link {
 		border-top: 1px solid grey;
+	}
+	header .title-container {
+		padding: 3% 0%;
+	}
+	header .title-container .title {
+		height: 100%;
+		font-size: 500%;
+	}
+	.middle-section {
+		border-top: 2px solid black;
+		border-bottom: 2px solid black;
+		margin: 0% 4%;
+	}
+	.middle-section section {
+		flex-flow: column nowrap;
+		border: 0;
+	}
+	.middle-section section .content {
+		padding: 5% 0%;
+		border: 0;
+	}
+	.contact-section {
+		padding: 4% 0%;
+		margin-left: 4%;
+	}
+	.contact-section #contact {
+		padding-bottom: 1%;
+	}
+	.contact-section address p {
+		padding-bottom: 1.5%;
 	}
 }
