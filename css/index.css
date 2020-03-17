@@ -1,3 +1,461 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+	v2.0 | 20110126
+	License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* code for the full container */
+
+.container {
+	margin: 5% 0% 5%;
+}
+
+/* code for services page full container */
+
+.services-container {
+	margin: 5% 0% 1%;
+}
+
+/* code for navigation bar */
+
+nav {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+nav .links {
+	display: flex;
+	justify-content: space-evenly;
+	width: 85%
+}
+
+nav .links a {
+	color: grey;
+	font-size: 120%;
+	text-decoration: none;
+}
+
+/* code for header */
+
+header{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-flow: row nowrap;
+	height: 100vh;
+}
+
+header div {
+	display: flex;
+	justify-content: center;
+}
+
+header .title-container {
+	flex-flow: column nowrap;
+	align-items: center;
+	text-align: center;
+}
+
+header .title-container .title {
+	font-size: 800%;
+}
+
+header .title-container .title-button {
+	display: flex;
+	border: 1px solid black;
+	align-items: center;
+	justify-content: center;
+	width: 180px;
+	height: 4vh;
+	/* font-size: 120%; */
+}
+
+/* code for services page header */
+
+.services-header {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.services-header div {
+	justify-content: center;
+	width: 90%;
+}
+
+.services-header div .services-header-img {
+	width: 100%;
+}
+
+.services-header .services-title-container {
+	flex-flow: column nowrap;
+	width: 90%;
+	font-size: 200%;
+	border-bottom: 2px solid black;
+	padding-bottom: 3%;
+}
+
+.services-header .services-title-container .services-title {
+	padding: 1% 0% 1%;
+}
+
+/* code for middle section */
+
+.middle-section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.middle-section section {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 80%;
+	font-size: 150%;
+}
+
+.content {
+	padding: 2% 2% 2% 0%;
+}
+
+/* code for services page middle section */
+
+.services-middle-section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding-bottom: 2%;
+	border-bottom: 2px solid black;
+}
+
+.services-middle-section div {
+	border: 2px solid black;
+	background-color: rgb(230, 230, 230);
+	align-content: space-evenly;
+	margin: 1%;
+	padding: 3%;
+	font-size: 200%;
+}
+
+.services-middle-section .digital-design-section {
+	width: 44%;
+}
+
+.services-middle-section .ux-ui-section {
+	width: 44%
+}
+
+.services-middle-section .digital-marketing-section {
+	width: 44%;
+}
+
+.services-middle-section .web-development-section {
+	width: 44%;
+}
+
+.services-middle-section .ios-development-section {
+	width: 44%;
+}
+
+.services-middle-section .android-development-section {
+	width: 44%;
+}
+
+.services-middle-section div button {
+	width: 40%;
+	padding: 4%;
+	margin-top: 8%;
+	border-radius: 10px;
+	border: 2px solid black;
+	font-size: 60%;
+}
+
+.services-middle-section div h2 {
+	padding-bottom: 4%;
+}
+
+.services-middle-section div p {
+	line-height: 1.3;
+}
+
+/* code for features and about section */
+
+.middle-section .features-section {
+	border-top: 2px solid black;
+}
+
+.middle-section .about-section {
+	border-top: 2px solid black;
+}
+
+/* code for middle image */
+
+.middle-section .middle-img {
+	display: flex;
+	justify-content: center;
+	width: 90%;
+}
+
+/* code for services, product, and vision section */
+
+.middle-section .services-section {
+	border-bottom: 2px solid black;
+}
+
+.middle-section .product-section {
+	border-bottom: 2px solid black;
+}
+
+.middle-section .vision-section {
+	border-bottom: 2px solid black;
+}
+
+/* code for contact-section */
+
+.contact-section {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+}
+
+.contact-section h2 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 150%;
+	width: 14%;
+	padding-top: 2%;
+}
+
+.contact-section address {
+	display: flex;
+	align-items: center;
+	flex-flow: column wrap;
+	font-size: 150%;
+	width: 30%;
+	line-height: 2;
+}
+
+/* code for services bottom section */
+
+.services-bottom-section {
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 3% 0% 5%;
+}
+
+.services-bottom-section div {
+	display: flex;
+	font-size: 200%;
+	width: 50%;
+}
+
+.services-bottom-section .facts-section {
+	flex-flow: row wrap;
+	padding: 0% 6% 6% 5%;
+	line-height: 1.2;
+}
+
+.services-bottom-section div .services-info-img {
+	padding-left: 2%;
+	width: 90%;
+}
+
+.services-bottom-section div ul {
+	padding-top: 4%;
+	line-height: 1.8;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+/* code for footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 3%;
+	font-size: 150%;
+}
+
+/* code for services footer */
+
+.services-footer {
+	display: flex;
+	justify-content: center;
+	padding: 3% 3% 0%;
+	font-size: 150%;
+}
+
+@media (max-width: 800px) {
+	.container {
+		margin: 0% 1%;
+	}
+	nav {
+		display: flex;
+		flex-flow: column-reverse nowrap;
+		width: 100%;
+	}
+	nav .links {
+		justify-content: space-around;
+		width: 100%;
+	}
+	nav div .logo {
+		padding-bottom: 20%;
+	}
+	header {
+		height: 100%;
+		padding: 10% 0%;
+	}
+	header .title-picture {
+		display: none;
+	}
+	.middle-section section {
+		width: 100%;
+		font-size: 90%;
+	}
+	.middle-section .middle-img {
+		width: 100%;
+	}
+	.content {
+		padding: 4% 4% 4% 2%;
+	}
+	.contact-section {
+		justify-content: flex-start;
+		padding: 3% 2%;
+	}
+	#contact {
+		justify-content: flex-start;
+		font-size: 90%;
+		/* width: 100%; */
+		margin-bottom: 2%;
+	}
+	.contact-section address {
+		align-items: flex-start;
+		font-size: 90%;
+		/* width: 100%; */
+		line-height: 1;
+	}
+	.contact-section address p {
+		padding-bottom: 1%;
+	}
+	footer {
+		font-size: 90%;
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		margin: 0;
+	}
+	nav {
+		align-items: center;
+		width: 100%;
+	}
+	nav div .logo {
+		padding: 10% 0%;
+	}
+	nav .links {
+		align-items: center;
+		flex-flow: column wrap;
+		text-align: center;
+	}
+	nav .links a {
+		border-bottom: 1px solid grey;
+		padding: 3% 0%;
+		width: 100%;
+	}
+	nav .links #services-link {
+		border-top: 1px solid grey;
+	}
+	header .title-container {
+		padding: 3% 0%;
+	}
+	header .title-container .title {
+		height: 100%;
+		font-size: 500%;
+	}
+	.middle-section {
+		border-top: 2px solid black;
+		border-bottom: 2px solid black;
+		margin: 0% 4%;
+	}
+	.middle-section section {
+		flex-flow: column nowrap;
+		border: 0;
+	}
+	.middle-section section .content {
+		padding: 5% 0%;
+		border: 0;
+	}
+	.contact-section {
+		padding: 4% 0%;
+		margin-left: 4%;
+	}
+	.contact-section #contact {
+		padding-bottom: 1%;
+	}
+	.contact-section address p {
+		padding-bottom: 1.5%;
+	}
+}
